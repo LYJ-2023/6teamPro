@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.google apis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --mainColor1: #2B5D97;
+    --mainColor2: #02A1BD;
+    --mainColor3: #4AD3E1;
+    --subColor1: #EFC483;
+    --subColor2: #EFDB9A;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#section4{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    vertical-align: middle;
+}
+#cards{
+    max-width: 1200px;
+    width: 800px;
+    padding: 100px 0;
+    position: relative;
+}
+#card1{
+    height: 300px;
+    background-image: linear-gradient(0deg, var(--subColor1), var(--subColor2));
+    box-shadow: 0px 0px 10px 1px  rgba(145, 145, 145, 0.5);
+    text-align: right;
+}
+#card2{
+    height: 300px;
+    margin-top: 30px;
+    background-image: linear-gradient(0deg, var(--mainColor3), var(--subColor2));
+    box-shadow: 0px 0px 10px 1px  rgba(145, 145, 145, 0.5);
+    text-align: left;
+}
+#card3{
+    height: 300px;
+    margin-top: 30px;
+    background-image: linear-gradient(0deg, var(--mainColor2), var(--mainColor3));
+    box-shadow: 0px 0px 10px 1px  rgba(145, 145, 145, 0.5);
+    text-align: right;
+}
+
+/*글자 효과---------------------*/
+.name{
+    padding: 0px 100px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.card_year{
+    padding: 0px 100px;
+    color: white;
+}
+.card_text{
+    text-align: left;
+    padding: 50px 100px;
+    color: white;
+}
+.card_t{
+    padding-top: 30px;
+}
+
+/*비누방울 효과 -----------------------------------------------------------*/
+#card1 .card1_C1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    left: -10%;
+    box-shadow: 0 8px 32px 0 rgba(170, 139, 44, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 70%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#card1 .card1_C2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    right: -3%;
+    box-shadow: 0 8px 32px 0 rgba(170, 139, 44, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 70%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#card2 .card2_C1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    box-shadow: 0 8px 32px 0 rgba(170, 139, 44, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 70%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#card2 .card2_C2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 33%;
+    right: 40%;
+    box-shadow: 0 8px 32px 0 rgba(44, 113, 170, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 70%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#card3 .card3_C1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 4%;
+    right: 10%;
+    box-shadow: 0 8px 32px 0 rgba(44, 113, 170, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 70%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* ... 이미지 ... */
+    </style>
+</head>
+<body>
+    <section id="cards">
+        <article id="card1">
+            <!--비누 방울 효과-->
+            <div class="card1_C1"></div>
+            <div class="card1_C2"></div>
+            <!--아이돌 설명-->
+            <div class="card_t">
+                <p class="name">SISTAR</p>
+                <p class="card_year">2010~2017 - 스타쉽 엔터테인먼트</p>
+                <p class="card_text">
+                    씨스타는 대한민국의 4인조 걸 그룹으로 로엔 엔터테인먼트의 산하 레이블인 스타쉽 엔터테인먼트 소속 그룹이었다. 
+                    멤버 구성은 효린, 보라, 소유, 다솜으로 구성되어 있었다.
+                </p>
+            </div>
+        </article>
+        <article id="card2">
+            <!--비누 방울 효과-->
+            <div class="card2_C1"></div>
+            <div class="card2_C2"></div>
+            <!--아이돌 설명-->
+            <div class="card_t">
+                <p class="name">SEVENTEEN</p>
+                <p class="card_year">2015 - 플레디스 엔터테인먼트</p>
+                <p class="card_text">
+                    세븐틴은 플레디스 소속으로 2015년 5월 26일에 데뷔한 대한민국의 13인조 보이 그룹이다. 그룹 내에는 퍼포먼스, 보컬, 힙합팀이 존재한다. 
+                    '세븐틴'이라는 팀명은 팀 인원 13 + 3개의 유닛 하나의 캐럿+1로, 13+3+1=17 이란 뜻이다.
+                </p>
+            </div>
+        </article>
+        <article id="card3">
+            <!--비누 방울 효과-->
+            <div class="card3_C1"></div>
+            <!--아이돌 설명-->
+            <div class="card_t">
+                <p class="name">NEWJEANS</p>
+                <p class="card_year">2022 - 어도어</p>
+                <p class="card_text">NewJeans는 2022년 7월 22일에 데뷔한 대한민국의 5인조 걸 그룹으로, 소속사는 하이브 산하의 레이블인 어도어이다.
+                    SM 엔터테인먼트 비주얼 디렉터 출신으로 하이브에 영입된 민희진이 프로듀서로 나서서 발굴한 걸 그룹이다.</p>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
